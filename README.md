@@ -2,7 +2,6 @@
 
 Welcome to the Arsenal Fan Blog a dynamic, single-page web application created by Gooners, for Gooners! Stay updated with the latest Arsenal news, player spotlights, historical legends, and interactive fan experiences.
 
-🚀  Live Demo---
 🎬  Video Demo---- https://www.awesomescreenshot.com/video/43120284?key=d733a8403607f153a9545e1b8364accd
 
 
