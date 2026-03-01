@@ -1,0 +1,1406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsenal FC Fan Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="logo-container">
+          <div class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+              alt="Arsenal FC Logo"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>Arsenal FC</h1>
+          </div>
+        </div>
+
+        <nav id="nav">
+          <button data-route="home" class="active">
+            <i class="fas fa-home"></i> Home
+          </button>
+          <button data-route="add"><i class="fas fa-plus"></i> Add Post</button>
+          <button data-route="all">
+            <i class="fas fa-newspaper"></i> All Posts
+          </button>
+          <button data-route="fav">
+            <i class="fas fa-heart"></i> Favorites
+          </button>
+          <button data-route="history">
+            <i class="fas fa-landmark"></i> History
+          </button>
+          <button data-route="testimonials">
+            <i class="fas fa-comments"></i> Fan Zone
+          </button>
+          <button data-route="about">
+            <i class="fas fa-info-circle"></i> About
+          </button>
+        </nav>
+
+        <div>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div id="home" class="view active">
+          <section class="hero">
+            <div class="arsenal-logo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+                alt="Arsenal FC Logo"
+              />
+            </div>
+            <div class="welcome-content">
+              <h2>
+                <span class="rope-animation"
+                  >Welcome to Arsenal FC Fan Blog</span
+                >
+              </h2>
+              <p>
+                welcome to the home of Gunners fans! celebrate unforgetable
+                memories of Arsenal FC with fellow fans who live and breath the
+                red and white.
+              </p>
+              <div style="text-align: center; margin-top: var(--space-xl)">
+                <button
+                  class="btn btn-primary"
+                  onclick="showPage('all')"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                  "
+                >
+                  <i class="fas fa-newspaper"></i>
+                  Explore Latest Posts
+                </button>
+              </div>
+            </div>
+            <div class="welcome-logo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+                alt="Arsenal FC Logo"
+              />
+            </div>
+          </section>
+
+          <section class="section star-players">
+            <div class="content-container">
+              <div class="page-content">
+                <h2 class="section-title">Arsenal Star Players</h2>
+                <div class="player-carousel">
+                  <div class="carousel-track" id="carouselTrack"></div>
+                  <div
+                    class="carousel-indicators"
+                    id="carouselIndicators"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section latest-news">
+            <div class="content-container">
+              <div class="page-content">
+                <h2 class="section-title">Latest Arsenal News</h2>
+
+                <div class="posts-grid">
+                  <div class="post-card">
+                    <div
+                      class="post-image"
+                      style="background-image: url(image/nuwaneri.jpg)"
+                    ></div>
+                    <div class="post-content">
+                      <h3>Ethan Nwaneri Signs Professional Contract</h3>
+                      <div class="post-meta">
+                        <span
+                          ><i class="far fa-calendar"></i> July 25, 2025</span
+                        >
+
+                        <span><i class="fas fa-tag"></i> player News</span>
+                      </div>
+                      <p>
+                        Highly-rated 17-year-old midfielder Ethan Nwaneri has
+                        signed his contract with Arsenal.
+                      </p>
+                      <div class="post-actions">
+                        <div class="post-controls">
+                          <button class="action-btn fav-btn">
+                            <i class="far fa-heart"></i>
+                          </button>
+                          <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                          </button>
+                          <button class="action-btn share-btn">
+                            <i class="fas fa-share"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-card">
+                    <div
+                      class="post-image"
+                      style="background-image: url(image/match.jpg)"
+                    ></div>
+                    <div class="post-content">
+                      <h3>Arsenal vs Manchester United Preview</h3>
+                      <div class="post-meta">
+                        <span
+                          ><i class="far fa-calendar"></i> Aug 17, 2025</span
+                        >
+                        <span><i class="fas fa-tag"></i> Match Preview</span>
+                      </div>
+                      <p>
+                        We analyze the key matchups and tactics that could
+                        decide this crucial Premier League encounter at the
+                        Emirates.
+                      </p>
+                      <div class="post-actions">
+                        <div class="post-controls">
+                          <button class="action-btn fav-btn">
+                            <i class="far fa-heart"></i>
+                          </button>
+                          <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                          </button>
+                          <button class="action-btn share-btn">
+                            <i class="fas fa-share"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-card">
+                    <div
+                      class="post-image"
+                      style="background-image: url(image/gukerash.jpg)"
+                    ></div>
+                    <div class="post-content">
+                      <h3>Victory Gukerash Transfer Update News</h3>
+                      <div class="post-meta">
+                        <span
+                          ><i class="far fa-calendar"></i> July 18, 2025</span
+                        >
+                        <span><i class="fas fa-tag"></i> Transfer News</span>
+                      </div>
+                      <p>
+                        Latest reports suggest Arsenal are closing in on the
+                        signing of Swedish stricker Victory Gukerash from
+                        Sporting Lisbon.
+                      </p>
+                      <div class="post-actions">
+                        <div class="post-controls">
+                          <button class="action-btn fav-btn">
+                            <i class="far fa-heart"></i>
+                          </button>
+                          <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                          </button>
+                          <button class="action-btn share-btn">
+                            <i class="fas fa-share"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section fan-zone">
+            <div class="content-container">
+              <div class="page-content">
+                <h2 class="section-title">What Fans Are Saying</h2>
+                <div class="testimonials-grid">
+                  <div class="testimonial-card">
+                    <div class="testimonial-header">
+                      <div
+                        class="testimonial-avatar"
+                        style="
+                          background-image: url(&quot;https://randomuser.me/api/portraits/men/32.jpg&quot;);
+                        "
+                      ></div>
+                      <div class="testimonial-info">
+                        <h4>James Wilson</h4>
+                        <p>Season Ticket Holder</p>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                      "The atmosphere at Emirates Stadium is electric! Arteta
+                      has transformed the team, and the future looks bright.
+                      Come on you Gunners!"
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card">
+                    <div class="testimonial-header">
+                      <div
+                        class="testimonial-avatar"
+                        style="
+                          background-image: url(&quot;https://randomuser.me/api/portraits/women/44.jpg&quot;);
+                        "
+                      ></div>
+                      <div class="testimonial-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Supporter since 1998</p>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                      "The Invincibles season was magical, but what Arteta is
+                      building now feels special too. Saka and Martinelli are
+                      incredible talents!"
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+
+                  <div class="testimonial-card">
+                    <div class="testimonial-header">
+                      <div
+                        class="testimonial-avatar"
+                        style="
+                          background-image: url(&quot;https://randomuser.me/api/portraits/men/67.jpg&quot;);
+                        "
+                      ></div>
+                      <div class="testimonial-info">
+                        <h4>Michael Brown</h4>
+                        <p>International Fan</p>
+                      </div>
+                    </div>
+                    <div class="testimonial-content">
+                      "As a fan from Nigeria, I've supported Arsenal since the
+                      Kanu days. This blog keeps me connected to the club I
+                      love. Coyg!"
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#"
+                  class="read-more"
+                  onclick="showPage('testimonials')"
+                >
+                  Read More Fan Stories <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div id="all" class="view">
+          <div class="content-container">
+            <div class="page-content">
+              <div class="post-header" style="text-align: center">
+                <h2 class="section-title">All Arsenal Posts</h2>
+                <div class="search-container">
+                  <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search by title or category..."
+                  />
+                  <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i> Search
+                  </button>
+                </div>
+              </div>
+
+              <div class="posts-grid" id="allPostsGrid"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="add" class="view">
+          <div class="content-container">
+            <div class="page-content">
+              <h2 class="section-title">Add New Post</h2>
+              <div class="form-container">
+                <form class="form-fieldset" id="addPostForm">
+                  <div class="form-group">
+                    <label for="postTitle">Title</label>
+                    <input
+                      type="text"
+                      id="postTitle"
+                      placeholder="Enter post title"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="postCategory">Category</label>
+                    <select id="postCategory" required>
+                      <option value="">Select a category</option>
+                      <option>Team News</option>
+                      <option>Match Report</option>
+                      <option>Stadium</option>
+                      <option>Transfer Rumors</option>
+                      <option>Fan Stories</option>
+                      <option>players</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="postImage">Upload Image</label>
+                    <div class="file-upload">
+                      <div class="file-upload-btn">
+                        <i class="fas fa-cloud-upload-alt"></i> Choose Image
+                      </div>
+                      <input type="file" id="postImage" accept="image/*" />
+                      <div class="file-name" id="fileName">
+                        No file selected
+                      </div>
+                    </div>
+                    <div class="image-preview-container">
+                      <img
+                        id="imagePreview"
+                        class="image-preview"
+                        alt="Image preview"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea
+                      id="postContent"
+                      placeholder="Write your post content here..."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="form-actions">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="saveDraftBtn"
+                    >
+                      <i class="fas fa-save"></i> Save Draft
+                    </button>
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      id="publishBtn"
+                    >
+                      <i class="fas fa-paper-plane"></i> Publish
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="fav" class="view">
+          <div class="content-container">
+            <div class="page-content">
+              <h2 class="section-title">Your Favorites</h2>
+              <div class="posts-grid" id="favoritesGrid"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="history" class="view">
+          <div class="content-container">
+            <div class="page-content">
+              <h2 class="section-title">Arsenal FC History & Legends</h2>
+
+              <div class="history-container">
+                <div class="history-card">
+                  <div class="history-icon">
+                    <i class="fas fa-landmark"></i>
+                  </div>
+                  <h3>Club History</h3>
+                  <p>
+                    Founded in 1886 as Dial Square by workers at the Royal
+                    Arsenal in Woolwich, south London. Renamed Royal Arsenal
+                    shortly afterwards and became Woolwich Arsenal in 1893.
+                  </p>
+                </div>
+
+                <div class="history-card">
+                  <div class="history-icon">
+                    <i class="fas fa-trophy"></i>
+                  </div>
+                  <h3>Herbert Chapman Era</h3>
+                  <p>
+                    The legendary manager who revolutionized English football in
+                    the 1930s. Introduced tactics like the WM formation,
+                    floodlights, and numbered shirts. Led Arsenal to their first
+                    major trophies.
+                  </p>
+                </div>
+
+                <div class="history-card">
+                  <div class="history-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3>The Invincibles</h3>
+                  <p>
+                    The 2003-04 season saw Arsenal complete an entire Premier
+                    League campaign unbeaten (26 wins, 12 draws). Managed by
+                    Arsène Wenger, featuring legends like Henry, Vieira, and
+                    Bergkamp.
+                  </p>
+                </div>
+
+                <div class="history-card">
+                  <div class="history-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <h3>Thierry Henry</h3>
+                  <p>
+                    Arsenal's all-time top scorer with 228 goals. The French
+                    striker won two Premier League titles and two FA Cups with
+                    the club. Known for his incredible pace, skill, and
+                    finishing ability.
+                  </p>
+                </div>
+              </div>
+
+              <div style="margin-top: var(--space-xl); text-align: center">
+                <h3
+                  style="
+                    color: var(--arsenal-gold);
+                    margin-bottom: var(--space-md);
+                  "
+                >
+                  Arsenal's Legacy
+                </h3>
+                <p
+                  style="
+                    line-height: 1.7;
+                    color: var(--text-secondary);
+                    margin-bottom: var(--space-md);
+                  "
+                >
+                  With 13 league titles, a record 14 FA Cups, and two European
+                  trophies, the Gunners have a rich history of success. The club
+                  has consistently been at the forefront of English football,
+                  known for attractive, attacking football and developing
+                  world-class talent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="testimonials" class="view">
+          <div class="content-container">
+            <div class="page-content">
+              <h2 class="section-title">Fan Zone - Exclusive Giveaways</h2>
+
+              <div class="giveaways-container">
+                <div class="giveaway-card">
+                  <div class="giveaway-icon">
+                    <i class="fas fa-tshirt"></i>
+                  </div>
+                  <h3>Custom Jersey Giveaway</h3>
+                  <p>
+                    Win a personalized Arsenal jersey with your name and
+                    preferred number. Limited edition home kit signed by the
+                    entire squad!
+                  </p>
+                  <button
+                    class="giveaway-btn"
+                    onclick="enterGiveaway('jersey')"
+                  >
+                    Enter Now
+                  </button>
+                </div>
+
+                <div class="giveaway-card">
+                  <div class="giveaway-icon">
+                    <i class="fas fa-ticket-alt"></i>
+                  </div>
+                  <h3>Match Tickets Giveaway</h3>
+                  <p>
+                    Win 2 VIP tickets to an Arsenal home match of your choice.
+                    Includes pre-match tour and meet & greet with legends!
+                  </p>
+                  <button
+                    class="giveaway-btn"
+                    onclick="enterGiveaway('tickets')"
+                  >
+                    Enter Now
+                  </button>
+                </div>
+
+                <div class="giveaway-card">
+                  <div class="giveaway-icon">
+                    <i class="fas fa-futbol"></i>
+                  </div>
+                  <h3>Signed Ball Giveaway</h3>
+                  <p>
+                    Win an official match ball signed by the current Arsenal
+                    first team squad. Limited to 10 winners worldwide!
+                  </p>
+                  <button class="giveaway-btn" onclick="enterGiveaway('ball')">
+                    Enter Now
+                  </button>
+                </div>
+              </div>
+
+              <h2 class="section-title">What Arsenal Supporters Say</h2>
+              <div class="testimonials-grid">
+                <div class="testimonial-card">
+                  <div class="testimonial-header">
+                    <div
+                      class="testimonial-avatar"
+                      style="
+                        background-image: url(&quot;https://randomuser.me/api/portraits/men/32.jpg&quot;);
+                      "
+                    ></div>
+                    <div class="testimonial-info">
+                      <h4>James Wilson</h4>
+                      <p>Season Ticket Holder</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    "The atmosphere at Emirates Stadium is electric! Arteta has
+                    transformed the team, and the future looks bright. Come on
+                    you Gunners!"
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-header">
+                    <div
+                      class="testimonial-avatar"
+                      style="
+                        background-image: url(&quot;https://randomuser.me/api/portraits/women/44.jpg&quot;);
+                      "
+                    ></div>
+                    <div class="testimonial-info">
+                      <h4>Sarah Johnson</h4>
+                      <p>Supporter since 1998</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    "The Invincibles season was magical, but what Arteta is
+                    building now feels special too. Saka and Martinelli are
+                    incredible talents!"
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-header">
+                    <div
+                      class="testimonial-avatar"
+                      style="
+                        background-image: url(&quot;https://randomuser.me/api/portraits/men/22.jpg&quot;);
+                      "
+                    ></div>
+                    <div class="testimonial-info">
+                      <h4>David Roberts</h4>
+                      <p>Supporter since 2004</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    "The connection between the players and fans has never been
+                    stronger. Arteta has truly brought back the Arsenal spirit!"
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-header">
+                    <div
+                      class="testimonial-avatar"
+                      style="
+                        background-image: url(&quot;https://randomuser.me/api/portraits/women/65.jpg&quot;);
+                      "
+                    ></div>
+                    <div class="testimonial-info">
+                      <h4>Emma Thompson</h4>
+                      <p>International Fan</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    "As a fan from Canada, I wake up early to watch every match.
+                    The passion of Arsenal fans is unmatched worldwide!"
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-header">
+                    <div
+                      class="testimonial-avatar"
+                      style="
+                        background-image: url(&quot;https://randomuser.me/api/portraits/men/45.jpg&quot;);
+                      "
+                    ></div>
+                    <div class="testimonial-info">
+                      <h4>Raj Patel</h4>
+                      <p>Supporter since 2010</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    "The way Arsenal play football is beautiful. Even when we
+                    don't win, the style and philosophy make me proud to be a
+                    Gooner."
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-header">
+                    <div
+                      class="testimonial-avatar"
+                      style="
+                        background-image: url(&quot;https://randomuser.me/api/portraits/men/78.jpg&quot;);
+                      "
+                    ></div>
+                    <div class="testimonial-info">
+                      <h4>Thomas Müller</h4>
+                      <p>Germany Fan</p>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    "Kai Havertz's move to Arsenal has made me follow the club
+                    more closely. The way they develop young players is
+                    impressive!"
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="about" class="view">
+          <div class="content-container">
+            <div class="page-content">
+              <h2 class="section-title">About Arsenal FC Fan Blog</h2>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: var(--space-xl);
+                  margin-bottom: var(--space-xl);
+                "
+              >
+                <div>
+                  <h3
+                    style="
+                      color: var(--arsenal-gold);
+                      margin-bottom: var(--space-md);
+                    "
+                  >
+                    Our Mission
+                  </h3>
+                  <p
+                    style="
+                      line-height: 1.7;
+                      margin-bottom: var(--space-md);
+                      color: var(--text-secondary);
+                    "
+                  >
+                    The Arsenal FC Fan Blog was created by supporters, for
+                    supporters. Our mission is to build a global community of
+                    Gooners who share a passion for one of England's most
+                    historic football clubs.
+                  </p>
+                  <p
+                    style="
+                      line-height: 1.7;
+                      margin-bottom: var(--space-md);
+                      color: var(--text-secondary);
+                    "
+                  >
+                    We provide the latest news, match analysis, player profiles,
+                    and exclusive content you won't find anywhere else. Whether
+                    you're a lifelong supporter or new to the Arsenal family,
+                    you'll find a home here.
+                  </p>
+                </div>
+                <div>
+                  <h3
+                    style="
+                      color: var(--arsenal-gold);
+                      margin-bottom: var(--space-md);
+                    "
+                  >
+                    Join Our Community
+                  </h3>
+                  <p
+                    style="
+                      line-height: 1.7;
+                      margin-bottom: var(--space-md);
+                      color: var(--text-secondary);
+                    "
+                  >
+                    Connect with fellow Arsenal supporters from around the
+                    world. Share your thoughts, memories, and passion for the
+                    club in our Fan Zone.
+                  </p>
+                  <div
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      padding: var(--space-md);
+                      border-radius: var(--border-radius);
+                      border: var(--border-gold);
+                    "
+                  >
+                    <h4
+                      style="
+                        margin-bottom: var(--space-sm);
+                        color: var(--arsenal-gold);
+                      "
+                    >
+                      Upcoming Events
+                    </h4>
+                    <ul
+                      style="
+                        padding-left: var(--space-lg);
+                        color: var(--text-secondary);
+                      "
+                    >
+                      <li style="margin-bottom: var(--space-sm)">
+                        August 14 : New season kickoff event
+                      </li>
+                      <li style="margin-bottom: var(--space-sm)">
+                        Augest 15: Pre-season watch party
+                      </li>
+                      <li style="margin-bottom: var(--space-sm)">
+                        Augest 17: Arsenal vs Manchister united game
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h3
+                style="
+                  color: var(--arsenal-gold);
+                  margin-bottom: var(--space-md);
+                  text-align: center;
+                "
+              >
+                Meet the Team
+              </h3>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(5, 1fr);
+                  gap: var(--space-lg);
+                  align-items: center;
+                  text-align: center;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                      background: url(image/Sumeya.jpg) center/cover;
+                      margin: 0 auto var(--space-md);
+                      border: var(--border-gold);
+                    "
+                  ></div>
+                  <h4>Sumeya</h4>
+                  <p style="color: var(--text-muted)">Founder & publisher</p>
+                </div>
+
+                <div>
+                  <div
+                    style="
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                      background: url(image/Aliya.jpg) center/cover;
+                      margin: 0 auto var(--space-md);
+                      border: var(--border-gold);
+                    "
+                  ></div>
+                  <h4>Aliya</h4>
+                  <p style="color: var(--text-muted)">Senior developer</p>
+                </div>
+
+                <div>
+                  <div
+                    style="
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                      background: url(image/Mirhan.jpg) center/cover;
+                      margin: 0 auto var(--space-md);
+                      border: var(--border-gold);
+                    "
+                  ></div>
+                  <h4>Mirhan</h4>
+                  <p style="color: var(--text-muted)">Executive publisher</p>
+                </div>
+
+                <div>
+                  <div
+                    style="
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                      background: url(image/Nagia.jpg) center/cover;
+                      margin: 0 auto var(--space-md);
+                      border: var(--border-gold);
+                    "
+                  ></div>
+                  <h4>Nagia</h4>
+                  <p style="color: var(--text-muted)">Fans officer</p>
+                </div>
+
+                <div>
+                  <div
+                    style="
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                      background: url(Azra.jpg) center/cover;
+                      margin: 0 auto var(--space-md);
+                      border: var(--border-gold);
+                    "
+                  ></div>
+                  <h4>Azra</h4>
+                  <p style="color: var(--text-muted)">Writer</p>
+                </div>
+              </div>
+
+              <style>
+                @media (max-width: 800px) {
+                  div[style*="grid-template-columns"] div > div {
+                    width: 80px !important;
+                    height: 80px !important;
+                  }
+                  div[style*="grid-template-columns"] h4 {
+                    font-size: 0.9rem;
+                  }
+                  div[style*="grid-template-columns"] p {
+                    font-size: 0.8rem;
+                  }
+                }
+
+                @media (max-width: 500px) {
+                  div[style*="grid-template-columns"] {
+                    grid-template-columns: repeat(
+                      5,
+                      minmax(60px, 1fr)
+                    ) !important;
+                  }
+                  div[style*="grid-template-columns"] div > div {
+                    width: 60px !important;
+                    height: 60px !important;
+                  }
+                  div[style*="grid-template-columns"] h4 {
+                    font-size: 0.8rem;
+                  }
+                  div[style*="grid-template-columns"] p {
+                    font-size: 0.7rem;
+                  }
+                }
+              </style>
+
+              <div class="contact-container">
+                <div class="contact-info">
+                  <h3
+                    style="
+                      color: var(--arsenal-gold);
+                      margin-bottom: var(--space-xl);
+                      text-align: center;
+                    "
+                  >
+                    Contact Us
+                  </h3>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                      <h4>Address</h4>
+                      <p>Addis Ababa, Ethioia</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <h4>Email</h4>
+                      <p>contact@arsenalfanblog.com</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <h4>Phone</h4>
+                      <p>+251 911234511</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                      <h4>Working Hours</h4>
+                      <p>Monday-Friday: 9AM - 6PM</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-form">
+                  <h3
+                    style="
+                      color: var(--arsenal-gold);
+                      margin-bottom: var(--space-xl);
+                      text-align: center;
+                    "
+                  >
+                    Send Us a Message
+                  </h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="contactName">Your Name</label>
+                      <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="contactEmail">Email Address</label>
+                      <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="contactSubject">Subject</label>
+                      <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="Enter subject"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="contactMessage">Message</label>
+                      <textarea
+                        id="contactMessage"
+                        placeholder="Write your message here..."
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      style="width: 100%; margin-top: var(--space-md)"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="mainFooter">
+        <div class="footer-content">
+          <div class="footer-logo">Arsenal FC Fan Blog</div>
+          <p>Join the global community of Arsenal supporters</p>
+
+          <div class="footer-links">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('add')">Add Post</a>
+            <a href="#" onclick="showPage('all')">All Posts</a>
+            <a href="#" onclick="showPage('all')">favorites</a>
+            <a href="#" onclick="showPage('history')">History</a>
+            <a href="#" onclick="showPage('testimonials')">Fan Zone</a>
+            <a href="#" onclick="showPage('about')">About</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+
+          <div class="copyright">
+            &copy; 2025 Arsenal FC Fan Blog. This is an unofficial fan site
+            developed by five girls.
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal" id="successModal">
+        <div class="modal-content">
+          <button class="modal-close" id="modalClose">&times;</button>
+          <div class="modal-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3 class="modal-title">Post Published Successfully!</h3>
+          <p class="modal-text">
+            Your new post has been published and is now visible to all users.
+          </p>
+          <button class="btn btn-primary" id="modalOk">OK</button>
+        </div>
+      </div>
+
+      <div class="modal" id="shareModal">
+        <div class="modal-content">
+          <button class="modal-close" id="shareModalClose">&times;</button>
+          <div class="modal-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <h3 class="modal-title">Share This Post</h3>
+          <p class="modal-text">
+            Share this post with fellow Arsenal fans on social media!
+          </p>
+          <div class="social-icons" style="margin-top: var(--space-xl)">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="commentsModal">
+        <div class="modal-content">
+          <button class="modal-close" id="commentsModalClose">&times;</button>
+          <div class="modal-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3 class="modal-title">Comments</h3>
+          <div class="comments-list" id="commentsList">
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-header-info">
+                  <div class="comment-author">James Wilson</div>
+                  <div class="comment-date">Jun 20, 2023</div>
+                </div>
+                <div class="comment-actions">
+                  <button class="action-btn edit-comment">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="action-btn delete-comment">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="comment-content">
+                This is fantastic news! Saka is the future of our club.
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-header-info">
+                  <div class="comment-author">Sarah Johnson</div>
+                  <div class="comment-date">Jun 21, 2023</div>
+                </div>
+                <div class="comment-actions">
+                  <button class="action-btn edit-comment">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="action-btn delete-comment">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="comment-content">
+                Best news of the summer! He's going to be a legend.
+              </div>
+            </div>
+          </div>
+          <form class="comment-form" style="margin-top: var(--space-md)">
+            <textarea
+              class="form-control"
+              placeholder="Add your comment..."
+              style="
+                width: 100%;
+                padding: var(--space-md);
+                border-radius: var(--border-radius);
+                background: rgba(0, 0, 0, 0.3);
+                color: white;
+                border: 2px solid var(--arsenal-gold);
+              "
+              required
+            ></textarea>
+            <button class="btn btn-primary" style="margin-top: var(--space-md)">
+              Post Comment
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="deleteModal">
+        <div class="modal-content">
+          <button class="modal-close" id="deleteModalClose">&times;</button>
+          <div class="modal-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3 class="modal-title">Confirm Delete</h3>
+          <p class="modal-text">
+            Are you sure you want to delete this post? This action cannot be
+            undone.
+          </p>
+          <div
+            style="
+              display: flex;
+              gap: var(--space-md);
+              justify-content: center;
+              margin-top: var(--space-xl);
+            "
+          >
+            <button class="btn btn-secondary" id="cancelDelete">Cancel</button>
+            <button class="btn btn-primary" id="confirmDelete">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="editPostModal">
+        <div class="modal-content">
+          <button class="modal-close" id="editPostClose">&times;</button>
+          <div class="modal-icon">
+            <i class="fas fa-edit"></i>
+          </div>
+          <h3 class="modal-title">Edit Post</h3>
+          <form
+            class="form-fieldset"
+            id="editPostForm"
+            style="margin-top: var(--space-md)"
+          >
+            <div class="form-group">
+              <label for="editPostTitle">Title</label>
+              <input
+                type="text"
+                id="editPostTitle"
+                placeholder="Enter post title"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="editPostCategory">Category</label>
+              <select id="editPostCategory" required>
+                <option value="">Select a category</option>
+                <option>Team News</option>
+                <option>Match Report</option>
+                <option>Player Focus</option>
+                <option>Transfer Rumors</option>
+                <option>Fan Stories</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="editPostImage">Upload New Image</label>
+              <div class="file-upload">
+                <div class="file-upload-btn">
+                  <i class="fas fa-cloud-upload-alt"></i> Choose Image
+                </div>
+                <input type="file" id="editPostImage" accept="image/*" />
+                <div class="file-name" id="editFileName">No file selected</div>
+              </div>
+              <div class="image-preview-container">
+                <img
+                  id="editImagePreview"
+                  class="image-preview"
+                  alt="Image preview"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="editPostContent">Content</label>
+              <textarea
+                id="editPostContent"
+                placeholder="Write your post content here..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-danger" id="deleteInEditBtn">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="cancelEditBtn"
+              >
+                <i class="fas fa-times"></i> Cancel
+              </button>
+              <button type="submit" class="btn btn-primary" id="saveEditBtn">
+                <i class="fas fa-save"></i> Save Changes
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="giveawayModal">
+        <div class="modal-content">
+          <button class="modal-close" id="giveawayClose">&times;</button>
+          <div class="modal-icon" id="giveawayIcon">
+            <i class="fas fa-tshirt"></i>
+          </div>
+          <h3 class="modal-title" id="giveawayTitle">Custom Jersey Giveaway</h3>
+          <p class="modal-text">
+            Enter your details below to participate in the giveaway:
+          </p>
+          <form
+            class="form-fieldset"
+            id="giveawayForm"
+            style="margin-top: var(--space-md)"
+          >
+            <div class="form-group">
+              <label for="giveawayName">Full Name</label>
+              <input
+                type="text"
+                id="giveawayName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group" id="jerseyNumberField">
+              <label for="jerseyNumber">Preferred Jersey Number</label>
+              <input
+                type="number"
+                id="jerseyNumber"
+                min="1"
+                max="99"
+                placeholder="Enter number"
+                required
+              />
+            </div>
+            <div
+              class="form-group"
+              id="matchSelectionField"
+              style="display: none"
+            >
+              <label for="matchSelection">Preferred Match</label>
+              <select id="matchSelection">
+                <option>Arsenal vs Chelsea (Aug 15)</option>
+                <option>Arsenal vs Tottenham (Sep 10)</option>
+                <option>Arsenal vs Man Utd (Oct 5)</option>
+              </select>
+            </div>
+            <div class="form-group" id="triviaSection" style="display: none">
+              <div class="trivia-question">
+                <p>Who is Arsenal's all-time top goalscorer?</p>
+              </div>
+              <div class="trivia-options">
+                <div class="trivia-option" data-answer="false">
+                  Dennis Bergkamp
+                </div>
+                <div class="trivia-option" data-answer="true">
+                  Thierry Henry
+                </div>
+                <div class="trivia-option" data-answer="false">Ian Wright</div>
+                <div class="trivia-option" data-answer="false">
+                  Robin van Persie
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="submitGiveaway">
+              Submit Entry
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="giveawayResultModal">
+        <div class="modal-content">
+          <button class="modal-close" id="giveawayResultClose">&times;</button>
+          <div class="modal-icon" id="giveawayResultIcon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="modal-title" id="giveawayResultTitle">Congratulations!</h3>
+          <div id="giveawayResultContent"></div>
+          <button class="btn btn-primary" id="giveawayResultOk">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
